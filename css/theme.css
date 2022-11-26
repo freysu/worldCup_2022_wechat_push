@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'hupufont-Medium';
+  /*
+    防止ssr时闪烁
+    https://web.dev/font-display/?utm_source=lighthouse&utm_medium=devtools
+  */
+  font-display: swap;
+  src: url('https://activity-static.hoopchina.com.cn/hupu-fonts/hupu-Medium.ttf?t=20220424') format('truetype');
+}
+
+@font-face {
+  font-family: 'hupufont-Regular';
+  font-display: swap;
+  src: url('https://activity-static.hoopchina.com.cn/hupu-fonts/hupu-Regular.ttf?t=20220424') format('truetype');
+}
+
+/** color **/
+
+body {
+  --primary_button: #ea0e20;
+  --secondary_button: #24262b;
+  --tag1: #2f6eeb;
+  --tag2: #ffb400;
+  --tag3: #00a4b8;
+  --tag4: #00985f;
+  --tag5: #e0684f;
+  --primary_text: #24262b;
+  --secondary_text: #6c717d;
+  --tertiary_text: #89909f;
+  --disable_text: #c7cbd5;
+  --white_text: #ffffff;
+  --secondarywhite_text: #ffffff99;
+  --bg: #ffffff;
+  --bg2: #24262B;
+  --bg_card: #ffffff;
+  --bg_data: #f6f7f9;
+  --bg_click: #f3f5fc;
+  --line: #f0f1f5;
+  --separator: #f0f1f5;
+  --label_bg1: #e5f5fb;
+  --label_bg2: #fdeced;
+  --label_bg3: #eaf0fd;
+  --label_bg4: #fff3d8;
+  --mask: #00000080;
+  --button_mask: #ffffff99;
+  --button_mask2: #242a2b33;
+  --toast: #242a2bcc;
+  --chart1: #2f6eeb1a;
+  --chart2: #46b6f5;
+  --chart3: #ff782d;
+  --chart4: #ccd6e7;
+  --white_mask: #ffffff4d;
+  --white_text2: #ffffff;
+}
+
+body[hupu-ui-theme=dark] {
+  --primary_button: #f05663;
+  --secondary_button: #edeef1;
+  --tag1: #7eb0fc;
+  --tag2: #ffd266;
+  --tag3: #4dbfcd;
+  --tag4: #cce034;
+  --tag5: #ff856b;
+  --primary_text: #edeef1;
+  --secondary_text: #aaafbb;
+  --tertiary_text: #818899;
+  --disable_text: #3a3f49;
+  --white_text: #ffffff;
+  --secondarywhite_text: #ffffff99;
+  --bg: #24262b;
+  --bg2: #111217;
+  --bg_card: #2c2f37;
+  --bg_data: #2c2f37;
+  --bg_click: #3a3f49;
+  --line: #303440;
+  --separator: #111217;
+  --label_bg1: #2a3e45;
+  --label_bg2: #3e2c32;
+  --label_bg3: #343f50;
+  --label_bg4: #474134;
+  --mask: #00000080;
+  --button_mask: #00000099;
+  --button_mask2: #242a2b33;
+  --toast: #242f37cc;
+  --chart1: #7eb0fc1a;
+  --chart2: #36a5e3;
+  --chart3: #eb6d26;
+  --chart4: #535f74;
+  --white_mask: #ffffff4d;
+  --white_text2: #24262B;
+}
+
+/** font **/
+
+body {
+  --hupu_font_size_score: 32PX;
+  --hupu_font_size_statement: 24PX;
+  --hupu_font_size_title1: 20PX;
+  --hupu_font_size_tab1: 18PX;
+  --hupu_font_size_title2: 16PX;
+  --hupu_font_size_body1: 16PX;
+  --hupu_font_size_title3: 14PX;
+  --hupu_font_size_body2: 14PX;
+  --hupu_font_size_body3: 18PX;
+  --hupu_font_size_body4: 20PX;
+  --hupu_font_size_body5: 17PX;
+  --hupu_font_size_callout: 12PX;
+}
+
+@media screen and (min-width: 414px) {
+  body {
+    --hupu_font_size_score: 33PX;
+    --hupu_font_size_statement: 25PX;
+    --hupu_font_size_title1: 21PX;
+    --hupu_font_size_tab1: 19PX;
+    --hupu_font_size_title2: 17PX;
+    --hupu_font_size_body1: 17PX;
+    --hupu_font_size_title3: 15PX;
+    --hupu_font_size_body2: 15PX;
+    --hupu_font_size_body3: 19PX;
+    --hupu_font_size_body4: 21PX;
+    --hupu_font_size_body5: 18PX;
+    --hupu_font_size_callout: 13PX;
+  }
+}
